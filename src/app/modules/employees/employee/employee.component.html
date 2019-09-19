@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-md-6 form-group">
+        <input placeholder="First Name" class="form-control" [(ngModel)]="employeeService.currentEmployee.firstName">
+    </div>
+    <div class="col-md-6 form-group">
+        <input placeholder="Last Name" class="form-control" [(ngModel)]="employeeService.currentEmployee.lastName">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 form-group">
+        <input placeholder="Designation" class="form-control" [(ngModel)]="employeeService.currentEmployee.designation">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 form-group">
+        <input placeholder="contact" class="form-control" [(ngModel)]="employeeService.currentEmployee.contact">
+    </div>
+    <div class="col-md-6 form-group">
+        <input placeholder="address" class="form-control" [(ngModel)]="employeeService.currentEmployee.address">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <button class="btn btn-success btn-block btn-lg" (click)="createAndUpdate(employeeService.currentEmployee)"><i class="fa fa-save"></i> SAVE</button>
+    </div>
+    <div class="col-md-4">
+        <button class="btn btn-primary btn-block btn-lg" (click)="clear()"><i class="fa fa-retweet"></i> CLEAR</button>
+    </div>
+</div>
